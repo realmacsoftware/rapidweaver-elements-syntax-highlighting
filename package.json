@@ -1,0 +1,49 @@
+{
+  "name": "rapidweaver-elements-syntax-highlighting",
+  "displayName": "RapidWeaver Elements Syntax Highlighting",
+  "description": "Syntax highlighting for the RapidWeaver Elements template language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "rw-elements",
+        "aliases": [
+          "RapidWeaver Elements",
+          "rw-elements"
+        ],
+        "extensions": [
+          ".html",
+          ".css",
+          ".scss",
+          ".sass"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "rw-elements",
+        "scopeName": "source.html",
+        "path": "./syntaxes/rw-elements.tmLanguage.json"
+      },
+      {
+        "language": "html",
+        "scopeName": "source.rw-elements-injection",
+        "path": "./syntaxes/rw-elements-injection.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "RapidWeaver Elements Theme",
+        "path": "./themes/rapidweaver-elements-theme.json",
+        "uiTheme": "vs-dark"
+      }
+    ]
+  }
+}

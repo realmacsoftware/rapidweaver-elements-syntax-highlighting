@@ -1,0 +1,70 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "RapidWeaver Elements",
+  "patterns": [
+    {
+      "include": "text.html.basic"
+    },
+    {
+      "begin": "%\\[if\\s+",
+      "end": "\\]%",
+      "name": "keyword.control.if.rw-elements",
+      "patterns": [
+        {
+          "include": "#id"
+        }
+      ]
+    },
+    {
+      "begin": "%\\[elseif\\s+",
+      "end": "\\]%",
+      "name": "keyword.control.elseif.rw-elements",
+      "patterns": [
+        {
+          "include": "#id"
+        }
+      ]
+    },
+    {
+      "match": "%\\[endif\\]%",
+      "name": "keyword.control.endif.rw-elements"
+    },
+    {
+      "match": "(%include)(\\s+-template=)(\\\"[^\\\"]*\\\")(%)",
+      "captures": {
+        "1": {
+          "name": "keyword.control.include.rw-elements"
+        },
+        "2": {
+          "name": "keyword.control.template.rw-elements"
+        },
+        "3": {
+          "name": "string.quoted.template.rw-elements"
+        },
+        "4": {
+          "name": "keyword.control.include-end.rw-elements"
+        }
+      }
+    },
+    {
+      "include": "#id"
+    }
+  ],
+  "repository": {
+    "id": {
+      "match": "(%id=)(\\w+)(%)",
+      "captures": {
+        "1": {
+          "name": "keyword.other.id.rw-elements"
+        },
+        "2": {
+          "name": "variable.name.rw-elements"
+        },
+        "3": {
+          "name": "keyword.other.id-end.rw-elements"
+        }
+      }
+    }
+  },
+  "scopeName": "source.html"
+}

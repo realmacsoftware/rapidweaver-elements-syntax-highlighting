@@ -1,0 +1,21 @@
+{
+  "fileTypes": [],
+  "injectionSelector": "L:text.html.basic",
+  "patterns": [
+    {
+      "match": "(%id=)(\\w+)(%)",
+      "captures": {
+        "1": {
+          "name": "keyword.other.id.rw-elements"
+        },
+        "2": {
+          "name": "variable.name.rw-elements"
+        },
+        "3": {
+          "name": "keyword.other.id-end.rw-elements"
+        }
+      }
+    }
+  ],
+  "scopeName": "source.rw-elements-injection"
+}

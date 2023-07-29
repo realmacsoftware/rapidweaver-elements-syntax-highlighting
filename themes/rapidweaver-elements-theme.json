@@ -1,0 +1,79 @@
+{
+  "name": "RapidWeaver Elements Theme",
+  "type": "dark",
+  "colors": {},
+  "tokenColors": [
+    {
+      "scope": "keyword.control.if.rw-elements",
+      "settings": {
+        "foreground": "#ffc600"
+      }
+    },
+    {
+      "scope": "expression.if.rw-elements",
+      "settings": {
+        "foreground": "#ffc600"
+      }
+    },
+    {
+      "scope": "keyword.control.if-end.rw-elements",
+      "settings": {
+        "foreground": "#ffc600"
+      }
+    },
+    {
+      "scope": "keyword.control.elseif.rw-elements",
+      "settings": {
+        "foreground": "#ffc600"
+      }
+    },
+    {
+      "scope": "keyword.control.else.rw-elements",
+      "settings": {
+        "foreground": "#ffc600"
+      }
+    },
+    {
+      "scope": "keyword.control.endif.rw-elements",
+      "settings": {
+        "foreground": "#ffc600"
+      }
+    },
+    {
+      "scope": "keyword.control.include.rw-elements",
+      "settings": {
+        "foreground": "#138de1"
+      }
+    },
+    {
+      "scope": "keyword.control.include-end.rw-elements",
+      "settings": {
+        "foreground": "#138de1"
+      }
+    },
+    {
+      "scope": "keyword.control.template.rw-elements",
+      "settings": {
+        "foreground": "#138de1"
+      }
+    },
+    {
+      "scope": "string.quoted.template.rw-elements",
+      "settings": {
+        "foreground": "#8ffa78"
+      }
+    },
+    {
+      "scope": "keyword.other.id.rw-elements",
+      "settings": {
+        "foreground": "#138de1"
+      }
+    },
+    {
+      "scope": "variable.name.rw-elements",
+      "settings": {
+        "foreground": "#b866be"
+      }
+    }
+  ]
+}
